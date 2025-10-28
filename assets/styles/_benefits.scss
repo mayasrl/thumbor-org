@@ -45,6 +45,25 @@ $mobile-benefit-margin: 15 + image_height(sprite_file($common, benefits-develope
         }
     }
 
+    @include breakpoint-tablet {
+        margin-top: 80px;
+        
+        .benefit {
+            font-size: 15px;
+            line-height: 24px;
+            width: 48%;
+            margin-right: 2%;
+            
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+            
+            .title {
+                font-size: 18px;
+            }
+        }
+    }
+
     @include breakpoint-mobile {
         margin-top: 50px;
 

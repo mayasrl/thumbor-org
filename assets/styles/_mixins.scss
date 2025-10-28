@@ -2,6 +2,14 @@
     @media (max-width: 640px)  { @content; }
 }
 
+@mixin breakpoint-tablet {
+    @media (min-width: 641px) and (max-width: 1024px) { @content; }
+}
+
+@mixin breakpoint-tablet-down {
+    @media (max-width: 1024px) { @content; }
+}
+
 @mixin breakpoint-retina {
     @media
         (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2),

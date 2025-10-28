@@ -9,8 +9,11 @@ body {
 }
 
 .container {
-    width: 1055px;
+    max-width: 1055px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .ms {
@@ -175,9 +178,22 @@ body {
     }
 }
 
-@media (max-width: 1054px) {
-    html, body {
-        width: 1055px;
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@include breakpoint-tablet {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    
+    .col-7, .col-6, .col-5-5, .col-5, .col-4, .col-3 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 

@@ -43,6 +43,11 @@ footer {
 
     }
 
+    @include breakpoint-tablet {
+        font-size: 16px;
+        padding-top: 24px;
+    }
+
     @include breakpoint-mobile {
         margin-top: 42px;
         padding-top: 0;

@@ -273,6 +273,24 @@
         }
     }
 
+    @include breakpoint-tablet {
+        margin-top: 80px;
+        
+        .top-testimonial {
+            .quote {
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+        
+        .testimonial {
+            .quote {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+
     @include breakpoint-mobile {
         margin-top: 50px;
 
